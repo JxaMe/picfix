@@ -3,8 +3,40 @@ import { getToolMetadata } from '@/lib/seo'
 import { tools } from '@/lib/tools'
 import ToolLayout from '@/components/ToolLayout'
 import ResizeClient from './resize-client'
+import type { UseCase, RelatedTool } from '@/components/ToolLayout'
 
 const tool = tools.find((t) => t.id === 'resize')!
+
+const useCases: UseCase[] = [
+  {
+    title: 'Instagram Post — 1080×1080',
+    description: 'Square posts display at 1080×1080 pixels. Your photo may crop if wider than 1:1 — resize first, then upload. Instagram compresses heavily, so start with the highest quality source.',
+  },
+  {
+    title: 'Twitter/X Header — 1500×500',
+    description: 'Twitter header images are 1500×500 with a 3:1 aspect ratio. The center 600px vertically is obscured by your profile photo. Keep key content in the outer thirds.',
+  },
+  {
+    title: 'YouTube Thumbnail — 1280×720',
+    description: 'YouTube thumbnails are 1280×720 (16:9) and under 2MB. A well-sized thumbnail gets 30% more clicks. Use bold text and faces for best CTR.',
+  },
+  {
+    title: 'Discord Server Icon — 128×128',
+    description: 'Server icons display at 128×128. After resizing, apply rounded corners for a clean look on both desktop and mobile.',
+    link: { id: 'round', text: 'Round the corners' },
+  },
+  {
+    title: 'Etsy Listing — 2700×2025',
+    description: 'Etsy recommends 2700×2025 for the 4:3 aspect ratio. After resizing, compress to under 1MB for fast loading.',
+    link: { id: 'compress', text: 'Compress after resizing' },
+  },
+]
+
+const relatedTools: RelatedTool[] = [
+  { id: 'compress', reason: 'Compress resized photos for faster loading' },
+  { id: 'round', reason: 'Round corners for avatars and profile pictures' },
+  { id: 'convert', reason: 'Change format after resizing if needed' },
+]
 
 export const metadata: Metadata = getToolMetadata('resize')
 
@@ -12,6 +44,8 @@ export default function ResizePage() {
   return (
     <ToolLayout
       tool={tool}
+      useCases={useCases}
+      relatedTools={relatedTools}
       faq={[
         {
           question: 'How do I resize an image?',

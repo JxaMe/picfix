@@ -17,6 +17,9 @@ export default function Header() {
           <Link href="/" className="text-zinc-600 hover:text-zinc-900">
             All Tools
           </Link>
+          <Link href="/blog" className="text-zinc-600 hover:text-zinc-900">
+            Blog
+          </Link>
         </div>
       </nav>
     </header>
