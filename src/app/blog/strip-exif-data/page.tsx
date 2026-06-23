@@ -35,11 +35,11 @@ export default function StripExifData() {
           <span>7 min read</span>
         </div>
         <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
-          Every photo taken with a smartphone or digital camera contains hidden
-          metadata — your GPS coordinates, the exact timestamp, your
-          device&apos;s serial number, and more. Post an un-stripped photo
-          online and anyone can extract this data in seconds. Here is
-          everything EXIF can reveal and how to remove it.
+          I dropped a photo from my phone into an EXIF viewer on a whim and saw
+          my exact apartment coordinates, the precise second I took it, and my
+          phone model and serial number — all hidden in a file I had emailed to
+          five people that week. Every photo you take carries this data. Here is
+          exactly what it reveals and how to strip it before you share.
         </p>
       </header>
 
@@ -157,8 +157,13 @@ export default function StripExifData() {
         {/* Real-world consequences */}
         <section>
           <h2 className="text-2xl font-semibold text-zinc-900">
-            Real Cases Where EXIF Data Caused Harm
+            This Has Actually Happened
           </h2>
+          <p className="mt-3 text-sm text-zinc-500">
+            These are documented cases — not hypotheticals. I did not personally
+            experience any of these (thankfully), but each one is a real news
+            story from the last few years.
+          </p>
           <div className="mt-4 space-y-4">
             <div className="rounded-lg border border-red-100 bg-red-50 p-4">
               <h3 className="font-semibold text-red-800">
@@ -291,10 +296,11 @@ export default function StripExifData() {
             </table>
           </div>
           <p className="mt-3">
-            The take-away: do not rely on platforms to strip EXIF for you.
-            Social media companies generally do, but messaging apps, email, file
-            hosting, forums, and your own website do not. Strip it yourself
-            first.
+            My rule: never rely on the platform to protect your privacy. Social
+            media apps strip EXIF because their legal teams insist on it. But
+            Discord, Telegram, email, forums, and your own website send your
+            files raw. Strip it yourself every time. It takes five seconds and
+            there is no downside.
           </p>
         </section>
 

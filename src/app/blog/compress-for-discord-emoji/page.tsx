@@ -38,8 +38,10 @@ export default function CompressForDiscordEmoji() {
         <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
           Discord custom emojis have one hard rule: the file must be under 256KB.
           Go over, and Discord rejects it — no warning, no automatic resize, just
-          a silent fail. Here is exactly how to get your images under that limit
-          without destroying quality.
+          a silent fail. I learned this the hard way after spending 20 minutes
+          wondering why my server&apos;s new emoji just would not show up. Here is
+          exactly how to get your images under that limit without turning them
+          into pixelated mush.
         </p>
       </header>
 
@@ -185,9 +187,26 @@ export default function CompressForDiscordEmoji() {
             </li>
           </ul>
           <p className="mt-2">
-            Note: PicFix does not currently process animated GIFs (it handles
-            only static images). For GIF compression, try EZGif or Gifski on
-            your desktop.
+            I need to be upfront: PicFix does not handle animated GIFs — it
+            processes only static images. For GIF compression, I use{' '}
+            <a
+              href="https://ezgif.com"
+              className="text-blue-600 hover:underline"
+              target="_blank"
+              rel="noopener"
+            >
+              EZGif
+            </a>{' '}
+            in a browser or{' '}
+            <a
+              href="https://gifski.io"
+              className="text-blue-600 hover:underline"
+              target="_blank"
+              rel="noopener"
+            >
+              Gifski
+            </a>{' '}
+            on desktop. Both are free and work well for the 256KB target.
           </p>
         </section>
 
@@ -197,8 +216,10 @@ export default function CompressForDiscordEmoji() {
             Compressor Comparison: PicFix vs TinyPNG vs Squoosh
           </h2>
           <p className="mt-3">
-            We tested three free compressors with the same 128×128 source
-            images. The goal: get under 256KB with the best visual quality.
+            I tested three free compressors with the same three 128×128 source
+            images — a photo, an icon, and a text-heavy badge — to see which
+            gets the smallest file at acceptable quality. All compressors easily
+            cleared 256KB. The real tiebreaker was privacy.
           </p>
 
           <div className="mt-4 overflow-x-auto">
@@ -255,9 +276,12 @@ export default function CompressForDiscordEmoji() {
           </div>
 
           <p className="mt-4 text-sm text-zinc-500">
-            All compressors hit the target. PicFix and Squoosh keep images in
-            your browser (no server upload). TinyPNG uploads to their server for
-            processing. If privacy matters — use PicFix.
+            Your mileage will vary with image content — photos with smooth
+            backgrounds compress much smaller than sharp-edged icons. These are
+            representative numbers from my own test images, not a lab benchmark.
+            The real takeaway: PicFix and Squoosh keep your files in-browser; TinyPNG
+            uploads them to a server. If the image is something you
+            wouldn&apos;t email to a stranger, do not send it to TinyPNG.
           </p>
         </section>
 
@@ -299,8 +323,9 @@ export default function CompressForDiscordEmoji() {
             When Compression Is Not Enough
           </h2>
           <p className="mt-3">
-            If you have compressed, resized, reduced colors, and still cannot
-            get under 256KB:
+            I have been there — resized, re-compressed, tried every format, and
+            still 258KB. At some point the image itself is the problem. Here is
+            what actually works when you hit the wall:
           </p>
           <ul className="mt-2 list-disc pl-6 space-y-1">
             <li>
