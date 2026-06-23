@@ -23,6 +23,20 @@ const articles = [
     toolId: 'resize',
     date: '2026-06',
   },
+  {
+    slug: 'compress-jpeg-no-quality-loss',
+    title: 'How to Compress JPEG for Web Without Losing Quality',
+    description: 'JPEG compression quality sweet spot: 85%. How to reduce file size by 60-80% with zero visible quality loss.',
+    toolId: 'compress',
+    date: '2026-06',
+  },
+  {
+    slug: 'strip-exif-data',
+    title: 'Why You Must Strip EXIF Data Before Posting Photos Online',
+    description: 'Your photos leak GPS coordinates, timestamps, and device serial numbers. How to check and remove EXIF before posting.',
+    toolId: 'exif',
+    date: '2026-06',
+  },
 ]
 
 export default function BlogIndex() {
