@@ -16,7 +16,12 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
-export const metadata: Metadata = defaultMetadata
+export const metadata: Metadata = {
+  ...defaultMetadata,
+  verification: {
+    google: 'DmD_F6oyAVMNDAGbmjEKWquyCDm-0gVTxq7DIGyfSH8',
+  },
+}
 
 export default function RootLayout({
   children,
