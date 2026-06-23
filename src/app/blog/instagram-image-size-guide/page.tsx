@@ -42,6 +42,11 @@ export default function InstagramImageSizeGuide() {
           latest Instagram app (June 2026) to give you the exact numbers so you
           do not repeat my mistakes.
         </p>
+        <img
+          src="/blog/resize-tool.jpg"
+          alt="PicFix free image resizer tool showing custom dimension fields for exact pixel sizing"
+          className="mt-6 w-full rounded-lg border border-zinc-200"
+        />
       </header>
 
       <article className="mt-10 space-y-8 text-zinc-700 leading-relaxed">

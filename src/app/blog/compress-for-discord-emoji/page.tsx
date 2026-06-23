@@ -43,6 +43,11 @@ export default function CompressForDiscordEmoji() {
           exactly how to get your images under that limit without turning them
           into pixelated mush.
         </p>
+        <img
+          src="/blog/compress-tool.jpg"
+          alt="PicFix free online image compressor tool interface showing quality slider and before/after preview"
+          className="mt-6 w-full rounded-lg border border-zinc-200"
+        />
       </header>
 
       {/* Article body */}

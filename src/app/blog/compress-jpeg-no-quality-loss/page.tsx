@@ -42,6 +42,11 @@ export default function CompressJpegNoQualityLoss() {
           JPEG compression the hard way, so your pages are not bloated for no
           reason.
         </p>
+        <img
+          src="/blog/compress-tool.jpg"
+          alt="PicFix image compressor showing quality slider and file size comparison between original and compressed"
+          className="mt-6 w-full rounded-lg border border-zinc-200"
+        />
       </header>
 
       <article className="mt-10 space-y-8 text-zinc-700 leading-relaxed">

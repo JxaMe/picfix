@@ -39,8 +39,13 @@ export default function StripExifData() {
           my exact apartment coordinates, the precise second I took it, and my
           phone model and serial number — all hidden in a file I had emailed to
           five people that week. Every photo you take carries this data. Here is
-          exactly what it reveals and how to strip it before you share.
+          exactly what it           reveals and how to strip it before you share.
         </p>
+        <img
+          src="/blog/exif-tool.jpg"
+          alt="PicFix EXIF metadata viewer showing GPS coordinates camera model and timestamp extracted from a photo"
+          className="mt-6 w-full rounded-lg border border-zinc-200"
+        />
       </header>
 
       <article className="mt-10 space-y-8 text-zinc-700 leading-relaxed">

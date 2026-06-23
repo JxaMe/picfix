@@ -42,6 +42,11 @@ export default function WebpVsPngVsAvif() {
           my own photo library to give you straight answers on when to use each
           one.
         </p>
+        <img
+          src="/blog/convert-tool.jpg"
+          alt="PicFix free image converter tool showing format selection between PNG JPEG WebP and AVIF"
+          className="mt-6 w-full rounded-lg border border-zinc-200"
+        />
       </header>
 
       <article className="mt-10 space-y-8 text-zinc-700 leading-relaxed">
