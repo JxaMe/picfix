@@ -35,14 +35,14 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-zinc-50 font-sans">
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-WKRX3TV44B"
           strategy="afterInteractive"
         />
         <Script id="ga-init" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');`}
+  gtag('config', 'G-WKRX3TV44B');`}
         </Script>
         <Header />
         <main className="flex-1">{children}</main>
