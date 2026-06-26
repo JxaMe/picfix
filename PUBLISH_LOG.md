@@ -13,3 +13,4 @@
 | 9 | perfect-round-avatars | 已上线 | |
 | 10 | youtube-thumbnail-size | 已上线 | |
 | 11 | rotate-image-online | 2026-06-26 | 新文章 |
+| 12 | image-to-base64 | 2026-06-26 | 新文章 |

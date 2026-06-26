@@ -14,6 +14,7 @@ const blogSlugs = [
   'perfect-round-avatars',
   'youtube-thumbnail-size',
   'rotate-image-online',
+  'image-to-base64',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

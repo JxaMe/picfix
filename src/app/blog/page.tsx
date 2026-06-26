@@ -3,6 +3,13 @@ import { tools } from '@/lib/tools'
 
 const articles = [
   {
+    slug: 'image-to-base64',
+    title: 'Image to Base64: Free Online Converter for HTML, CSS & Email',
+    description: 'Convert images to Base64 strings for HTML, CSS, email, and JSON. Free online tool — no upload, runs entirely in your browser.',
+    toolId: 'base64',
+    date: '2026-06',
+  },
+  {
     slug: 'rotate-image-online',
     title: 'Rotate Image Online Free – Fix Orientation, Flip & Mirror in Seconds',
     description: 'Rotate, flip, and mirror images online for free. Fix upside-down photos, flip horizontally or vertically — no upload needed, 100% private.',
