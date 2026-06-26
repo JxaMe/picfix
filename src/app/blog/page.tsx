@@ -3,6 +3,13 @@ import { tools } from '@/lib/tools'
 
 const articles = [
   {
+    slug: 'rotate-image-online',
+    title: 'Rotate Image Online Free – Fix Orientation, Flip & Mirror in Seconds',
+    description: 'Rotate, flip, and mirror images online for free. Fix upside-down photos, flip horizontally or vertically — no upload needed, 100% private.',
+    toolId: 'rotate',
+    date: '2026-06',
+  },
+  {
     slug: 'compress-for-discord-emoji',
     title: 'Best Free Image Compressor for Discord Emojis: Under 256KB',
     description: 'How to compress images to under 256KB for Discord custom emoji uploads. Tested: PicFix vs TinyPNG vs Squoosh.',
@@ -70,13 +77,6 @@ const articles = [
     title: 'YouTube Thumbnail Size 2026: Best Dimensions & Design Tips',
     description: 'Exact 1280×720 YouTube thumbnail spec. Design rules for higher CTR, text safe zones, and staying under the 2 MB limit.',
     toolId: 'resize',
-    date: '2026-06',
-  },
-  {
-    slug: 'rotate-image-online',
-    title: 'Rotate Image Online Free – Fix Orientation, Flip & Mirror in Seconds',
-    description: 'Rotate, flip, and mirror images online for free. Fix upside-down photos, flip horizontally or vertically — no upload needed, 100% private.',
-    toolId: 'rotate',
     date: '2026-06',
   },
 ]
