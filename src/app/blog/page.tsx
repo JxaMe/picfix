@@ -37,6 +37,48 @@ const articles = [
     toolId: 'exif',
     date: '2026-06',
   },
+  {
+    slug: 'iphone-heic-to-jpg',
+    title: 'iPhone HEIC to JPG: Every Method, Ranked',
+    description: 'How to convert iPhone HEIC photos to JPG — change camera settings, use PicFix converter, AirDrop, or third-party apps. Tested and ranked.',
+    toolId: 'convert',
+    date: '2026-06',
+  },
+  {
+    slug: 'watermark-photos-cant-crop',
+    title: 'How to Watermark Photos That Cannot Be Cropped Out',
+    description: 'Anti-crop watermark techniques: center overlay, tiling, content blending. Make your watermarks impossible to remove without ruining the image.',
+    toolId: 'watermark',
+    date: '2026-06',
+  },
+  {
+    slug: 'blur-sensitive-info',
+    title: 'How to Blur Sensitive Info in Screenshots: 4 Methods',
+    description: 'Blur, pixelate, cover, or crop. Compare methods for redacting sensitive info in screenshots before sharing.',
+    toolId: 'blur',
+    date: '2026-06',
+  },
+  {
+    slug: 'perfect-round-avatars',
+    title: 'Create Perfect Round Avatars for GitHub, Discord, Twitter',
+    description: 'How to make round profile pictures. Resize to square, apply circular crop, and compress for every major platform.',
+    toolId: 'round',
+    date: '2026-06',
+  },
+  {
+    slug: 'youtube-thumbnail-size',
+    title: 'YouTube Thumbnail Size 2026: Best Dimensions & Design Tips',
+    description: 'Exact 1280×720 YouTube thumbnail spec. Design rules for higher CTR, text safe zones, and staying under the 2 MB limit.',
+    toolId: 'resize',
+    date: '2026-06',
+  },
+  {
+    slug: 'rotate-image-online',
+    title: 'Rotate Image Online Free – Fix Orientation, Flip & Mirror in Seconds',
+    description: 'Rotate, flip, and mirror images online for free. Fix upside-down photos, flip horizontally or vertically — no upload needed, 100% private.',
+    toolId: 'rotate',
+    date: '2026-06',
+  },
 ]
 
 export default function BlogIndex() {

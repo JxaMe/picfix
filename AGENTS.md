@@ -41,6 +41,32 @@ npm run start     # 生产服务器
 - 主要色系：zinc 为主，辅以 blue-600/700、green-50/100/700、red-50/200/700
 - 字体：Geist Sans + Geist Mono，通过 `next/font/google` 加载
 
+## Blog 写作（Skill 可用）
+
+```
+.opencode/skills/picfix-blog/SKILL.md
+```
+
+触发词：写 blog、写文章。skill 覆盖全流程：
+- 写 TSX 文章（模板 + 规则）
+- 浏览器截图（browser-act）
+- 更新 blog/page.tsx 索引 + sitemap.ts
+- build 验证
+
+### 内容规则
+1. **第一人称**："I"、"my"、不用 "we"、"the author"
+2. **个人故事**：至少一个真实踩坑经历作 hook
+3. **缺点直说**：正面承认 PicFix 局限（不支持 GIF、Canvas 编码器限制等）
+4. **数据免责**：对比数据后加一句"单次测试，不同图片结果不同"
+5. **交叉链接**：每处操作链接到对应 `/tools/<id>`
+6. **不提 AI**：不用 "AI"、"artificial intelligence"、"machine learning"
+7. **不用 emoji**（底部 tool tag 保持原有样式即可）
+8. **1500-2000 词**，slug 用连字符分隔英文
+
+### 发布日志见 `PUBLISH_LOG.md`
+
+全部 10 篇已上线。以后新文章写完后更新 PUBLISH_LOG.md 再 deploy。
+
 ## 限制
 
 - 所有工具输入**限制 100MB**，客户端校验
